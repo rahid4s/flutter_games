@@ -42,3 +42,8 @@ const Color kcShimmerHighlight = Color(0xff555555);
 const Color kcBlackOpacity = Color(0x80000000);
 const Color kcTransparent = Colors.transparent;
 const Color kcDrawerScrim = Colors.transparent;
+
+const Color kcGameBoardBg = Colors.black87;
+const Color kcFood = Colors.lightGreenAccent;
+const Color kcGameBoardSquares = Color(0xff666666);
+const Color kcSnake = Colors.green;

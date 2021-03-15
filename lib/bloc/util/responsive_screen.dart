@@ -96,6 +96,7 @@ class ScreenTypeLayout extends StatelessWidget {
 
   /// [isBoxed] shrinks the widget in middle
   final bool isBoxed;
+  final double boxWidthMultiplier;
 
   ScreenTypeLayout({
     Key? key,
@@ -103,13 +104,13 @@ class ScreenTypeLayout extends StatelessWidget {
     this.tablet,
     this.desktop,
     this.isBoxed = false,
+    this.boxWidthMultiplier = .7,
   })  : assert(mobile != null || tablet != null || desktop != null,
             'ScreenTypeLayout requires at least one ScreenType widget.'),
         super(key: key);
 
   final double tabletBoxSizeMin = 600;
   final double desktopBoxSizeMin = 760;
-  final double widthMultiplier = .7;
 
   @override
   Widget build(BuildContext context) {
@@ -121,7 +122,7 @@ class ScreenTypeLayout extends StatelessWidget {
           } else {
             if (isBoxed) {
               var boxSize =
-                  sizingInformation.screenSize.width * widthMultiplier;
+                  sizingInformation.screenSize.width * boxWidthMultiplier;
               return Align(
                 alignment: Alignment.topCenter,
                 child: ConstrainedBox(
@@ -144,7 +145,7 @@ class ScreenTypeLayout extends StatelessWidget {
           } else if (tablet != null) {
             if (isBoxed) {
               var boxSize =
-                  sizingInformation.screenSize.width * widthMultiplier;
+                  sizingInformation.screenSize.width * boxWidthMultiplier;
               return Align(
                 alignment: Alignment.topCenter,
                 child: ConstrainedBox(
@@ -161,7 +162,7 @@ class ScreenTypeLayout extends StatelessWidget {
           } else {
             if (isBoxed) {
               var boxSize =
-                  sizingInformation.screenSize.width * widthMultiplier;
+                  sizingInformation.screenSize.width * boxWidthMultiplier;
 
               return Align(
                 alignment: Alignment.topCenter,

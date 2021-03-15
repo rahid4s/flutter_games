@@ -11,7 +11,7 @@ changeTheme({required BuildContext context, required bool isDark}) {
       .setThemeMode(isDark ? ThemeMode.dark : ThemeMode.light);
 }
 
-bool isDarkTheme({required BuildContext context}) {
+bool isDarkTheme(BuildContext context) {
   if (getThemeManager(context).selectedThemeMode == ThemeMode.system) {
     return MediaQuery.of(context).platformBrightness == Brightness.dark;
   } else {

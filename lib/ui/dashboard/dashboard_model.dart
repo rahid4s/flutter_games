@@ -6,4 +6,8 @@ class DashboardModel extends BaseViewModel {
   NavigationService _navigation = locator<NavigationService>();
 
   init() {}
+
+  void goToSnakeGame() {
+    //_navigation.navigateTo(Routes.snakeGame);
+  }
 }

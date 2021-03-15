@@ -23,3 +23,19 @@ final ksBottomPanelShape = RoundedRectangleBorder(
       topLeft: Radius.circular(ScreenSpec.margin),
       topRight: Radius.circular(ScreenSpec.margin)),
 );
+
+const kTextShadow = <Shadow>[
+  Shadow(
+    offset: Offset(1.0, 3.0),
+    blurRadius: 5.0,
+    color: Color.fromARGB(120, 85, 85, 85),
+  ),
+];
+
+const kTextShadowDark = <Shadow>[
+  Shadow(
+    offset: Offset(1.0, 3.0),
+    blurRadius: 5.0,
+    color: Color.fromARGB(120, 206, 206, 206),
+  ),
+];
