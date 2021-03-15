@@ -1,0 +1,107 @@
+name: flutter_boilerplate_app
+description: My Starting Flutter application template.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons:
+  font_awesome_flutter:
+  line_awesome_flutter:
+  google_fonts:
+  velocity_x: ^2.4.0-nullsafety.0
+  #auto_size_text: 3.0.0-nullsafety.0
+  hive: ^2.0.0 # Local data storage
+  hive_flutter: ^1.0.0
+  path_provider:
+  flutter_keyboard_visibility:
+  logger: # logging outputs
+  another_flushbar: ^1.10.15 # Snackbar replacement
+  #device_preview: ^0.6.2-beta # * enable when plugin dependencies have been updated
+  stacked: ^1.9.7 # Architecture Setup
+  stacked_services: ^0.7.3
+  stacked_hooks:
+  stacked_themes: ^0.2.4
+  delayed_display:
+  flutter_screenutil: ^5.0.0-nullsafety.9 # Design scaling & measurements
+  rename: # Rename project name and bundleId
+  easy_localization: ^3.0.0
+  flutter_blurhash:
+  cached_network_image: ^3.0.0-nullsafety
+  timeago:
+  flutter_spinkit:
+  flutter_svg: ^0.21.0-nullsafety.0
+  lottie: ^1.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner:
+  stacked_generator:
+  hive_generator:
+  #flutter_native_splash: ^1.0.3 # ! todo Use when dependency conflict has been fixed
+  #flutter_launcher_icons: ^0.9.0 # ! todo Use when dependency conflict has been fixed
+
+dependency_overrides:
+  #shared_preferences: ^2.0.4
+  #intl: ^0.17.0-nullsafety.2
+  #image: ^2.1.14
+  #flutter_cache_manager: ^2.1.1
+  #xml: ^5.0.2
+
+# change splash color and logo here
+flutter_native_splash:
+  color: "#FFFFFF"
+  color_dark: "#222222"
+  image: assets/images/logo.png
+  image_dark: assets/images/logo.png
+  #android_gravity: fill # for fullscreen splash image
+  #ios_content_mode: scaleAspectFill # for fullscreen splash image
+
+# change app logo here
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo.png"
+  image_path_android: "assets/images/logo.png"
+  adaptive_icon_background: "#ffffff" # android adaptive icon background color or asset path
+  adaptive_icon_foreground: "assets/images/logo.png" # android adaptive icon foreground asset path
+  image_path_ios: "assets/images/logo.png"
+
+# The following section is specific to Flutter.
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/translations/
+    - assets/anim/
+
+  # To add custom fonts to your application, add a fonts section here,
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700

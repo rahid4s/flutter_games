@@ -1,0 +1,23 @@
+// flutter pub run build_runner build --delete-conflicting-outputs
+// flutter packages pub run build_runner clean
+// taskkill /F /IM dart.exe
+
+// flutter pub global activate rename
+// flutter pub global run rename --bundleId com.rrdev.boilerplate
+// flutter pub global run rename --appname "Flutter Boilerplate"
+
+// emulator Pixel_3a_API_30_x86 -no-snapshot-load
+
+
+// dart pub outdated --mode=null-safety
+// dart pub upgrade --null-safety
+// flutter run --debug --no-sound-null-safety
+
+
+// git push -f origin master
+
+
+// flutter pub run --no-sound-null-safety flutter_native_splash:create
+// flutter pub run --no-sound-null-safety flutter_native_splash:remove
+
+// flutter pub run flutter_launcher_icons:main
