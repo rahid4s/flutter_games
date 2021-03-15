@@ -5,12 +5,16 @@ import 'package:stacked_themes/stacked_themes.dart';
 import '../bloc/service/data_service.dart';
 import '../ui/dashboard/dashboard.dart';
 import '../ui/page_not_found/page_not_found.dart';
+import '../ui/snake_game/snake_game_screen/snake_game_screen.dart';
+import '../ui/snake_game/snake_menu_screen/snake_menu_screen.dart';
 import '../ui/splash/splash.dart';
 
 @StackedApp(
   routes: [
     CupertinoRoute(page: SplashPage, initial: true),
     CupertinoRoute(page: DashboardPage),
+    CupertinoRoute(page: SnakeGameScreen),
+    CupertinoRoute(page: SnakeMenuScreen),
 
     /// 404 Not Found Page
     CupertinoRoute(page: PageNotFoundPage, path: '*'),

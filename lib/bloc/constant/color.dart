@@ -6,7 +6,8 @@ import 'package:flutter/material.dart';
 // ktc = const text color
 // * * * * * * * * * * * *
 
-const Color kcStatusBar = Colors.transparent;
+//Color kcStatusBar = Colors.black.withOpacity(.5);
+const Color kcStatusBar = Color(0x80555555);
 const Color kcNavigationBar = Color(0x80555555);
 
 const Color kcPrimary = Color(0xff222222);
@@ -45,5 +46,5 @@ const Color kcDrawerScrim = Colors.transparent;
 
 const Color kcGameBoardBg = Colors.black87;
 const Color kcFood = Colors.lightGreenAccent;
-const Color kcGameBoardSquares = Color(0xff666666);
+const Color kcGameBoardSquares = Color(0xB3666666);
 const Color kcSnake = Colors.green;

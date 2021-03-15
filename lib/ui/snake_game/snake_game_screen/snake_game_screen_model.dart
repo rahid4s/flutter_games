@@ -3,12 +3,11 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_boilerplate_app/bloc/constant/color.dart';
+import 'package:flutter_boilerplate_app/bloc/util/responsive_screen.dart';
 import 'package:stacked/stacked.dart';
 
-import '../../bloc/constant/color.dart';
-import '../../bloc/util/responsive_screen.dart';
-
-class GameScreenModel extends BaseViewModel {
+class SnakeGameScreenModel extends BaseViewModel {
 
   final double boardSpacing = 2;
 

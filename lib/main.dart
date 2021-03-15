@@ -80,7 +80,7 @@ class App extends StatelessWidget {
       iconTheme: IconThemeData(color: ktcPrimary),
       visualDensity: VisualDensity.adaptivePlatformDensity,
       appBarTheme: AppBarTheme.of(context).copyWith(
-        brightness: Brightness.dark,
+        brightness: Brightness.light,
       ),
       textTheme: GoogleFonts.ubuntuTextTheme(Theme.of(context).textTheme.apply(
             displayColor: ktcPrimaryDark,

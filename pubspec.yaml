@@ -31,7 +31,6 @@ dependencies:
   path_provider:
   flutter_keyboard_visibility:
   logger: # logging outputs
-  another_flushbar: ^1.10.15 # Snackbar replacement
   #device_preview: ^0.6.2-beta # * enable when plugin dependencies have been updated
   stacked: ^1.9.7 # Architecture Setup
   stacked_services: ^0.7.3
@@ -47,6 +46,9 @@ dependencies:
   flutter_spinkit:
   flutter_svg: ^0.21.0-nullsafety.0
   lottie: ^1.0.1
+  flutter_flexible_toast:
+    git:
+      url: https://github.com/rahid4s/flutter_flexible_toast.git
 
 dev_dependencies:
   flutter_test:

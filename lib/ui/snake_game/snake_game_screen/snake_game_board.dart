@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_boilerplate_app/bloc/constant/color.dart';
 import 'package:flutter_boilerplate_app/bloc/constant/style.dart';
 import 'package:flutter_boilerplate_app/bloc/util/responsive_screen.dart';
 import 'package:flutter_boilerplate_app/ui/shared/loading_indicator.dart';
 import 'package:stacked/stacked.dart';
+import 'snake_game_screen_model.dart';
 
-import '../../bloc/constant/color.dart';
-import 'game_screen_model.dart';
-
-class GameBoard extends ViewModelWidget<GameScreenModel> {
-
+class SnakeGameBoard extends ViewModelWidget<SnakeGameScreenModel> {
   @override
-  Widget build(BuildContext context, GameScreenModel model) {
+  Widget build(BuildContext context, SnakeGameScreenModel model) {
     return GestureDetector(
       onVerticalDragUpdate: (DragUpdateDetails dragDetails) =>
           model.handleVerticalDragInput(details: dragDetails),
@@ -22,7 +20,6 @@ class GameBoard extends ViewModelWidget<GameScreenModel> {
             model.handleKeyboardInputEvent(event: event),
         autofocus: true,
         child: Container(
-          color: kcGameBoardBg,
           padding: EdgeInsets.all(model.boardSpacing),
           alignment: Alignment.center,
           child: LayoutBuilder(
@@ -51,7 +48,6 @@ class GameBoard extends ViewModelWidget<GameScreenModel> {
                                 ? kcFood
                                 : model.getColor(index),
                           ),
-                          child: Text(index.toString()),
                         );
                       },
                     );

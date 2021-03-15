@@ -11,15 +11,21 @@ import 'package:stacked/stacked.dart';
 
 import '../ui/dashboard/dashboard.dart';
 import '../ui/page_not_found/page_not_found.dart';
+import '../ui/snake_game/snake_game_screen/snake_game_screen.dart';
+import '../ui/snake_game/snake_menu_screen/snake_menu_screen.dart';
 import '../ui/splash/splash.dart';
 
 class Routes {
   static const String splashPage = '/';
   static const String dashboardPage = '/dashboard-page';
+  static const String snakeGameScreen = '/snake-game-screen';
+  static const String snakeMenuScreen = '/snake-menu-screen';
   static const String pageNotFoundPage = '*';
   static const all = <String>{
     splashPage,
     dashboardPage,
+    snakeGameScreen,
+    snakeMenuScreen,
     pageNotFoundPage,
   };
 }
@@ -30,6 +36,8 @@ class StackedRouter extends RouterBase {
   final _routes = <RouteDef>[
     RouteDef(Routes.splashPage, page: SplashPage),
     RouteDef(Routes.dashboardPage, page: DashboardPage),
+    RouteDef(Routes.snakeGameScreen, page: SnakeGameScreen),
+    RouteDef(Routes.snakeMenuScreen, page: SnakeMenuScreen),
     RouteDef(Routes.pageNotFoundPage, page: PageNotFoundPage),
   ];
   @override
@@ -44,6 +52,18 @@ class StackedRouter extends RouterBase {
     DashboardPage: (data) {
       return CupertinoPageRoute<dynamic>(
         builder: (context) => DashboardPage(),
+        settings: data,
+      );
+    },
+    SnakeGameScreen: (data) {
+      return CupertinoPageRoute<dynamic>(
+        builder: (context) => const SnakeGameScreen(),
+        settings: data,
+      );
+    },
+    SnakeMenuScreen: (data) {
+      return CupertinoPageRoute<dynamic>(
+        builder: (context) => const SnakeMenuScreen(),
         settings: data,
       );
     },
